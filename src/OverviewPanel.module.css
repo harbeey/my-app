@@ -1,0 +1,131 @@
+.overviewPanel {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+.statCard {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-left: 4px solid transparent;
+}
+
+.statCard.total {
+  border-left-color: #3b82f6;
+}
+.statCard.overdue {
+  border-left-color: #ef4444;
+}
+.statCard.dueSoon {
+  border-left-color: #f59e0b;
+}
+
+.statIcon {
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+}
+
+.progressSection {
+  margin-top: 10px;
+}
+
+.progressSection h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.progressBarContainer {
+  width: 100%;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #6ee7b7);
+  transition: width 0.5s ease-in-out;
+}
+
+.progressLabel {
+  display: block;
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.taskDistribution {
+  margin-top: 10px;
+}
+
+.taskDistribution h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.chartPlaceholder {
+  display: flex;
+  height: 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.chartSegment {
+  height: 100%;
+  background-color: #3b82f6;
+  flex-grow: 1;
+}
+
+.chartSegment:nth-child(2n) {
+  background-color: #8b5cf6;
+}
+.chartSegment:nth-child(3n) {
+  background-color: #ec4899;
+}
+.chartSegment:nth-child(4n) {
+  background-color: #f59e0b;
+}

@@ -1,0 +1,117 @@
+.legalPage {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px 32px;
+  border-bottom: 1px solid #334155;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f6bf42;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnimation 0.5s ease-in-out forwards;
+}
+
+.fadeOut {
+  opacity: 1;
+  animation: fadeOutAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.backButton {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #4a5568;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.backButton:hover {
+  background: #334155;
+  border-color: #f6bf42;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f6bf42;
+  margin: 0 0 8px 0;
+}
+
+.lastUpdated {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 24px;
+}
+
+.content {
+  padding: 32px 64px 64px;
+  line-height: 1.7;
+  max-width: 80ch;
+  margin: 0 auto;
+}
